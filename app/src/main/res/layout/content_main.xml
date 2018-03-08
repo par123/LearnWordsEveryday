@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="words_reminder.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.65"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/showing_word_label"
+                android:gravity="center"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:width="100dp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Word Showing:" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showing_word_scrollview"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.03"
+                android:fillViewport="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvInScrollview"
+                        android:textIsSelectable="true"
+                        android:gravity="left"
+                        android:paddingLeft="20dp"
+                        android:textColor="#9c27b0"
+                        android:textSize="20dp"
+                        />
+                </LinearLayout>
+        </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.52"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottomLabel"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:paddingLeft="20dp"
+                android:text="You are learning 4 words everyday"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

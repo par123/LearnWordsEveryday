@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="words_reminder.MainActivity">
+    <item
+        android:id="@+id/change_words_per_day"
+        android:orderInCategory="100"
+        android:title="Change words per day"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/revision"
+        android:title="Revision"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/msg_to_developer"
+        android:title="Message to Developer"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/jump"
+        android:title="Jump"
+        app:showAsAction="never" />
+
+</menu>
